@@ -35,3 +35,7 @@ From the repository root:
 javac Day01_Foundations/TimeComplexity.java
 java -cp Day01_Foundations TimeComplexity
 ```
+
+## Progress
+
+- [x] Day 1 of 24 completed — Foundations

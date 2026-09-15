@@ -56,6 +56,7 @@ public class TimeComplexity {
     }
 
     private static void merge(int[] arr, int left, int mid, int right) {
+        // Copy both sorted halves into a temporary array, then write them back.
         int[] temp = new int[right - left + 1];
         int i = left, j = mid + 1, k = 0;
         while (i <= mid && j <= right) {
@@ -133,6 +134,7 @@ public class TimeComplexity {
 
         for (int n : sizes) {
             int[] data = new int[n];
+            // Use random input so each sorting benchmark processes unsorted data.
             for (int i = 0; i < n; i++) data[i] = (int) (Math.random() * n);
 
             // O(n log n) — Merge Sort
@@ -153,6 +155,7 @@ public class TimeComplexity {
         // --- O(2ⁿ) Demo ---
         System.out.println("\n--- O(2^n) Fibonacci ---");
         for (int n = 10; n <= 40; n += 10) {
+            // Measure how repeated recursive calls increase as n becomes larger.
             long start = System.nanoTime();
             long result = exponentialTime(n);
             double elapsed = (System.nanoTime() - start) / 1_000_000.0;
