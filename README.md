@@ -1,120 +1,78 @@
-<div align="center">
+# DSA in Java
 
-# 🚀 30-Day DSA Challenge — Java
+* [ ] 
 
-[![GeeksforGeeks](https://img.shields.io/badge/GeeksforGeeks-2F8D46?style=for-the-badge&logo=geeksforgeeks&logoColor=white)](https://www.geeksforgeeks.org/)
-[![HackerRank](https://img.shields.io/badge/HackerRank-00EA64?style=for-the-badge&logo=hackerrank&logoColor=black)](https://www.hackerrank.com/)
-[![GitHub](https://img.shields.io/badge/GitHub-Yathin--5-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Yathin-5)
-[![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)]()
-[![Progress](https://img.shields.io/badge/Day-02%2F30-00C853?style=for-the-badge)]()
+The first day is dedicated to revising Java for DSA. The remaining 30 days
+cover the complete DSA Master Tree, from foundations through advanced data
+structures and interview patterns.
 
-**A structured, 30-day journey to build a solid DSA foundation in Java.**
+## Repository Structure
 
-*Started: September 4, 2026 · Practice Platforms: GeeksforGeeks + HackerRank · Proof of Work: This Repo*
-
-</div>
-
----
-
-## 📌 About
-
-This repository documents my daily progress through a 30-day Data Structures & Algorithms challenge. Every day includes concept notes, problem solutions with full explanations, and honest reflections on what clicked and what didn't.
-
-**Target:** 100–120 quality problems (Easy 60–70 / Medium 30–45 / Hard 5–10)
-
-> *"Don't grind random problems. Always go: Topic → Learn pattern → 3–5 problems on that pattern → Review → Commit."*
-
----
-
-## 📂 Repository Structure
-
-```
+```text
 DSA_java/
-│
-├── README.md                        ← You are here
-├── progress.md                      ← Daily reflection log
-├── 30-Day-DSA-Java-Roadmap.md       ← Full roadmap with problem targets
-├── Day-by-Day-DSA-Java-Roadmap.md   ← Detailed daily breakdown
-│
-├── Day-01-Foundations/
-│   ├── notes.md                     ← Concepts + what I learned
-│   └── *.java                       ← Problem solutions
-│
-├── Day-02-Arrays/
-├── Day-03-Hashing/
-├── ...
-└── Day-30-Mock-Interview/
+├── README.md
+├── progress.md
+├── Complete-DSA-Java-Master-Plan.md
+├── Day-by-Day-DSA-Java-Roadmap.md
+├── resouces/
+│   ├── notes.md
+│   └── notes2.md
+└── Day-XX-Topic/
+    ├── notes.md
+    └── *.java
 ```
 
-Each day folder contains:
-- **`notes.md`** — Concept summaries, pattern notes, and reflections
-- **`.java` files** — One file per problem with approach + complexity documented
+## Current Status
 
----
+| Metric          | Status                |
+| --------------- | --------------------- |
+| Start date      | September 15, 2026    |
+| Current day     | Day 1 / 31            |
+| Today's focus   | Java revision for DSA |
+| Problems solved | 0                     |
+| Target          | 100–120 problems     |
 
-## 🗓️ 30-Day Roadmap Overview
+## 31-Day Schedule
 
-| Week | Days | Topics | Problem Target |
-|:---:|:---:|---|:---:|
-| **1** | 1–7 | Foundations, Arrays, Hashing, Two Pointers, Math Basics | 25–30 |
-| **2** | 8–14 | Sliding Window, Binary Search, Stack, Queue, Strings | 25–30 |
-| **3** | 15–21 | Linked Lists, Recursion, Trees, Graphs, Topological Sort | 20–25 |
-| **4** | 22–30 | Backtracking, Heaps, Bit Manipulation, DP, Mock Interview | 20–25 |
+|   Days | Main coverage                                                             |
+| -----: | ------------------------------------------------------------------------- |
+|      1 | Java revision for DSA                                                     |
+|   2–3 | Foundations, complexity, recurrences, mathematics                         |
+|   4–6 | Arrays, searching, prefix sums, windows, two pointers, Kadane, matrices   |
+|   7–9 | Strings, pattern matching, hashing, and trie                              |
+| 10–13 | Linked lists, stacks, queues, priority queues, and hashing internals      |
+| 14–17 | Binary trees, BST, heaps, AVL, Red-Black, segment and Fenwick trees       |
+| 18–21 | Graph representation, traversal, shortest paths, MST, and Union-Find      |
+| 22–24 | Recursion, backtracking, N-Queens, Sudoku, and greedy algorithms          |
+| 25–28 | Dynamic programming, knapsack, LCS, LIS, and matrix-chain multiplication  |
+|     29 | Bit manipulation                                                          |
+|     30 | Sparse Table, Heavy-Light Decomposition, Treap, Splay Tree, and Skip List |
+|     31 | Interview patterns, mock test, and final revision                         |
 
-📋 **Detailed plans:** [30-Day Roadmap](./30-Day-DSA-Java-Roadmap.md) · [Day-by-Day Breakdown](./Day-by-Day-DSA-Java-Roadmap.md)
+See the complete plan in
+[Complete-DSA-Java-Master-Plan.md](./Complete-DSA-Java-Master-Plan.md).
 
----
+## Daily Routine
 
-## 📊 Current Progress
+1. Study concepts for 45–60 minutes.
+2. Implement the topic in Java for 60–90 minutes.
+3. Solve 3–6 problems for 90–150 minutes.
+4. Test edge cases and write complexity analysis.
+5. Update [progress.md](./progress.md).
 
-| Metric | Status |
-|---|---|
-| **Current Day** | Day 2 / 30 |
-| **Problems Solved** | 0 |
-| **Active Days** | 0 |
-| **Max Streak** | 0 |
-| **Easy / Medium / Hard** | 0 / 0 / 0 |
+## Java Solution Template
 
-📈 **Full log:** [progress.md](./progress.md)
-
----
-
-## ⏱️ Daily Routine
-
-| Time | Activity |
-|---|---|
-| 1 hr | Learn the concept |
-| 1.5–2 hrs | Solve problems on GFG / HackerRank |
-| 30 min | Review + write notes + commit |
-
----
-
-## 📝 Notes Format (per problem)
-
-```
-Problem:          Two Sum
-Platform:         GFG / HackerRank
-Pattern:          Hashing
-Approach:         HashMap for O(1) lookup of complement
-Time Complexity:  O(n)
-Space Complexity: O(n)
-Difficulty:       Easy
-What I learned:   ...
+```text
+Problem:
+Pattern:
+Brute-force approach:
+Optimized approach:
+Time complexity:
+Auxiliary space:
+Edge cases:
+Mistake or insight:
 ```
 
----
-
-## 🔗 Links
-
-- 🟢 [GeeksforGeeks](https://www.geeksforgeeks.org/) — DSA problem practice
-- 🟩 [HackerRank](https://www.hackerrank.com/) — Java challenges + certifications
-- 📦 [GitHub](https://github.com/Yathin-5/DSA_java)
-- 📋 [Progress Tracker](./progress.md)
-
----
-
-<div align="center">
-
-**Day 2 of 30 — Let's go! 💪**
-
-</div>
+Practice platforms: [GeeksforGeeks](https://www.geeksforgeeks.org/) ·
+[HackerRank](https://www.hackerrank.com/) ·
+[LeetCode](https://leetcode.com/)

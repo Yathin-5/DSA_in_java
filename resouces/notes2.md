@@ -1,6 +1,6 @@
 # Day 02 — Arrays
 
-📅 **Date:** September 5, 2026  
+📅 **Date:** September 16, 2026
 📂 **Topic:** Array Traversal, In-Place Modification, Kadane's Algorithm, Prefix & Suffix Thinking  
 🎯 **Target:** 4 problems  
 
