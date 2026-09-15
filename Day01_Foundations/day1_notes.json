@@ -1,0 +1,171 @@
+*---------------------------------------------DATA STRUCTURES DAY-1----------------------------------------------*
+
+TOPICS COVERED:
+
+-Data structures
+-Algorithms
+-Time complexity
+-Big-O notation
+-Big-Ω notation
+-Big-Θ notation
+-Space complexity
+-Recurrence relations
+
+data structure : the data structure is a type of data organization, management, and storage format that enables efficient access and modification. It is a way of organizing 
+data in a computer so that it can be used effectively.
+
+
+algoritham: the algorithm is a step-by-step procedure or formula for solving a problem.
+            It is a set of rules or instructions designed to perform a specific task or solve a particular problem. Algorithms are essential in computer science and programming as they provide a clear and efficient way to process data and achieve desired outcomes.1
+
+            
+time complexity: time complexity is a computational complexity that describes the amount of time it takes to run an algorithm as a function of the length of the input.
+                It provides an estimate of the efficiency of an algorithm in terms of how its running time grows with the size of the input data. 
+                Time complexity is often expressed using Big O notation, which characterizes the upper bound of an algorithm's growth rate, allowing for comparisons between different algorithms and their performance on large datasets.
+
+                
+
+<---------------------------------------------BIG O NOTATION----------------------------------------------> 
+                
+                
+
+big o notation: Big O notation is a mathematical notation used to describe the upper bound of an algorithm's growth rate. It provides a way to express the efficiency of an algorithm in terms of how its running time or space requirements grow as the size of the input data increases. 
+                Big O notation allows for comparisons between different algorithms and helps identify the most efficient solution for a given problem, especially when dealing with large datasets.
+
+Type	Notation	Example Algorithms
+                
+// NOTE: these are in the order of increasing time complexity:
+
+* Logarithmic	    O(log n)	Binary Search
+
+//     Example:num[x]-------------->O(log n)
+//                 int binarySearch(int arr[], int l, int r, int x)
+// {
+//     if (r >= l) {
+//         int mid = l + (r - l) / 2;
+//         if (arr[mid] == x)
+//             return mid;
+//         if (arr[mid] > x)
+//             return binarySearch(arr, l, mid - 1, x);
+//         return binarySearch(arr, mid + 1, r, x);
+//     }
+//     return -1;
+// }
+
+* Linear	        O(n)	    Linear Search
+
+    // Example: searching the number in the arrays one by one in an array that make the n number of verifications in a for loop n=number of items in the array
+    
+    // bool findElement(int arr[], int n, int key)
+    // {
+    //     for (int i = 0; i < n; i++) {
+    //         if (arr[i] == key) {
+    //             return true;
+    //         }
+    //     }
+    //     return false;
+    // }
+
+Superlinear	    O(n log n)	Heap Sort, Merge Sort
+
+    // Example:here w When it comes to the super linear bigger notation we all step to the every part in the array and we sort everything but in a better efficient
+    //             This is why we're bigger in the bigger rotation and and log N both are arrived because N arrows due to V travels to the every element in the array and login
+    //             refers to the we just verify and traverse through the in text of the elements in the array using everything This is the reason we this is known as the Super lenear time complexity.
+
+    //             Heap Sort, Merge Sort -------->
+
+Polynomial	    O(n^c)	    Strassen’s Matrix Multiplication, Bubble Sort, Selection Sort, Insertion Sort, Bucket Sort
+
+        // Example: here we have the polynomial time complexity which is known as the O(n^c) where c is a constant and n is the number of elements in the array.
+        //                 for example if we have the 10 elements in the array and we have the c=2 then the time complexity will be O(10^2) = O(100) which is known as the polynomial time complexity.
+        //        
+        //
+        // proram:{
+        //     // Example code for polynomial time complexity in a easy words for c=2
+            // void bubbleSort(int arr[], int n)
+            // {
+            //     for (int i = 0; i < n - 1; i++) {
+            //         for (int j = 0; j < n - i - 1; j++) {
+            //             if (arr[j] > arr[j + 1]) {
+            //                 swap(arr[j], arr[j + 1]);
+            //             }
+            //         }
+            //     }
+            // }
+Exponential	    O(c^n)	    Tower of Hanoi
+
+            // Example:in the exponential time complexity we have the O(c^n) where c is a constant and n is the number of elements in the array.
+            
+            // for example if we have the 10 elements in the array and we have the c=2 then the time complexity will be O(2^10) = O(1024) which is known as the exponential time complexity.
+            // program:{
+            //            // Example code for exponential time complexity in a easy words
+            //             void generateSubsets(int arr[], int n)
+            // {
+            //     for (int i = 0; i < (1 << n); i++) {
+            //         for (int j = 0; j < n; j++) {
+            //             if (i & (1 << j)) {
+            //                 cout << arr[j] << " ";
+            //             }
+            //         }
+            //         cout << endl;
+            //     }
+            // }
+            //         }
+
+
+Factorial	    O(n!)	    Determinant Expansion by Minors, Brute force Search algorithm for Traveling Salesman Problem
+
+            // Example: The factorial time complexity is often seen in algorithms that generate all permutations of a set. For example, if we have a set of 3 elements, the number of permutations is 3! = 3 × 2 × 1 = 6.
+
+                // program:
+                // void permute(int* a, int l, int r)
+                // {
+                //     if (l == r) {
+                //         for (int i = 0; i <= r; i++) {
+                //             cout << a[i] << " ";
+                //         }
+                //         cout << endl;
+                //     }
+                //     else {
+                //         for (int i = l; i <= r; i++) {
+                //             swap(a[l], a[i]);
+                //             permute(a, l + 1, r);
+                //             swap(a[l], a[i]); // backtrack
+                //         }
+                //     }
+                // }
+
+different types of time complexity: 
+                1. Constant Time Complexity         (O(1))      : The running time of the algorithm remains constant regardless of the input size.
+                2. Logarithmic Time Complexity      (O(log n))  : The running time grows logarithmically with the input size, often seen in algorithms that divide the problem in half at each step.
+                3. Linear Time Complexity           (O(n))      : The running time grows linearly with the input size, meaning it increases proportionally to the number of elements in the input.
+                4. Linearithmic Time Complexity     (O(n log n)): The running time grows in proportion to n log n, commonly found in efficient sorting algorithms like mergesort and heapsort.
+                5. Quadratic Time Complexity        (O(n^2))    : The running time grows quadratically with the input size, often seen in algorithms with nested loops over the input data.
+                6. Cubic Time Complexity            (O(n^3))    : The running time grows cubically with the input size, typically found in algorithms with three nested loops.
+                7. Exponential Time Complexity      (O(2^n))    : The running time doubles with each additional element in the input, often seen in brute-force algorithms for combinatorial problems.
+                8. Factorial Time Complexity        (O(n!))     : The running time grows factorially with the input size, usually associated with algorithms that generate all permutations of a set.
+
+these are the example and the explanations of each type of time complexity.
+
+HOW TO FIND THE big O notation of an algorithm:
+
+f(x) = 3x^2 + 2x + 1
+
+        = O(3x^2) + O(2x) + O(1)
+        = O(x^2) + O(x) + O(1)
+        =O(x^2) + O(x)      //  x^2  >   x  > 1
+        = O(x^2)
+
+same way to the normal programming  code also 
+
+
+<----------------------------------------------------BIG omega notation-----------------------------------------------------> >
+
+
+
+<----------------------------------------------------BIG theta notation----------------------------------------------------->
+
+In simple language, Big - Theta(Θ) notation specifies asymptotic bounds (both upper and lower) for a function f(n) and provides the tightest bound for the growth rate of the function.
+It is used to describe the average-case time complexity of an algorithm, indicating that the algorithm's running time grows at a rate that is both upper and lower bounded by a specific function.
+
+

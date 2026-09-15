@@ -27,11 +27,36 @@ Day 12: ⬜ BST & Heaps          Day 24: ⬜ Interview Patterns
 
 | Phase | Days | Focus |
 |-------|------|-------|
-| **Phase 1** — Foundations & Linear DS | 1–6 | Complexity, Arrays, Strings, Linked Lists |
-| **Phase 2** — Core DS | 7–12 | Stacks, Queues, Hashing, Trees, Heaps |
-| **Phase 3** — Graphs & Recursion | 13–17 | Graphs, Recursion, Backtracking |
-| **Phase 4** — Algorithmic Paradigms | 18–21 | Greedy, DP, Bit Manipulation |
-| **Phase 5** — Advanced & Interview Prep | 22–24 | Advanced DS, Interview Patterns, Mock |
+| **Phase 1** — Foundations & Linear DS | 1–7 | Complexity, mathematics, arrays, strings, linked lists |
+| **Phase 2** — Core DS | 8–13 | Stacks, queues, hashing, trees, heaps |
+| **Phase 3** — Graphs & Problem Solving | 14–19 | Graphs, shortest paths, MST, recursion, greedy |
+| **Phase 4** — Dynamic Programming & Bit Tricks | 20–22 | DP foundations, advanced DP, bit manipulation |
+| **Phase 5** — Advanced & Interview Prep | 23–24 | Advanced structures, interview patterns, grand review |
+
+## ✅ Complete Topic Coverage
+
+Every item from the DSA Master Tree is assigned to one of the 24 study days. The
+checklist below is intentionally explicit so that no topic is hidden inside a
+broader heading.
+
+| Master Tree section | Assigned day(s) | Covered topics |
+|---|---:|---|
+| 1. Foundations | 1 | Data structures, algorithms, time complexity, Big-O, Big-Ω, Big-Θ, space complexity, recurrence relations |
+| 2. Mathematical Basics | 2 | Logarithms, modular arithmetic, prime numbers, GCD, LCM, Sieve of Eratosthenes |
+| 3. Arrays | 3–4 | Traversal, searching, linear search, binary search, prefix sum, sliding window, two pointers, Kadane’s algorithm, matrix/2D arrays |
+| 4. Strings | 5–6 | String manipulation, naive matching, KMP, Rabin-Karp, Z algorithm, palindrome problems, string hashing, Trie |
+| 5. Linked Lists | 7 | Singly, doubly, circular, reverse linked list, Floyd cycle detection, merge lists |
+| 6. Stack | 8 | Stack implementation, balanced parentheses, next greater element, monotonic stack, min stack |
+| 7. Queue | 9 | Queue implementation, circular queue, deque, priority queue, monotonic queue |
+| 8. Hashing | 10 | Hash tables, collision handling, chaining, open addressing, load factor, rehashing |
+| 9. Trees | 11–13 | Binary tree, traversals, inorder, preorder, postorder, height/depth, diameter, BST, AVL, red-black tree, segment tree, Fenwick tree, heap, min heap, max heap |
+| 10. Graphs | 14–17 | Matrix/list representation, BFS, DFS, topological sort, cycle detection, Dijkstra, Bellman-Ford, Floyd-Warshall, Kruskal, Prim, disjoint set/Union-Find |
+| 11. Recursion & Backtracking | 18 | Recursion basics, subsets, permutations, N-Queens, Sudoku solver |
+| 12. Greedy Algorithms | 19 | Activity selection, Huffman coding, fractional knapsack, job scheduling |
+| 13. Dynamic Programming | 20–21 | Memoization, tabulation, 1D DP, 2D DP, knapsack variants, LCS, LIS, matrix chain multiplication |
+| 14. Bit Manipulation | 22 | Bitwise operators, set/clear bits, count set bits, XOR tricks |
+| 15. Advanced DSA | 23 | Sparse table, heavy-light decomposition, Treap, Splay tree, Skip list |
+| 16. Interview Patterns | 24 | Two pointer, sliding window, binary search, BFS/DFS, greedy choice, DP pattern recognition |
 
 ---
 
@@ -40,131 +65,131 @@ Day 12: ⬜ BST & Heaps          Day 24: ⬜ Interview Patterns
 ```
 DSA_in_java/
 ├── README.md
-├── Day01_Foundations/
-│   ├── TimeComplexity.java
-│   ├── SpaceComplexity.java
-│   └── RecurrenceRelations.java
-├── Day02_MathBasics/
-│   ├── Logarithms.java
-│   ├── ModularArithmetic.java
-│   ├── PrimeNumbers.java
-│   ├── GCD_LCM.java
-│   └── SieveOfEratosthenes.java
-├── Day03_Arrays_Basics/
-│   ├── Traversal.java
-│   ├── LinearSearch.java
-│   ├── BinarySearch.java
-│   └── PrefixSum.java
-├── Day04_Arrays_Advanced/
-│   ├── SlidingWindow.java
-│   ├── TwoPointers.java
-│   ├── KadanesAlgorithm.java
-│   └── Matrix2D.java
-├── Day05_Strings_Basics/
-│   ├── StringManipulation.java
-│   ├── NaivePatternMatch.java
-│   ├── PalindromeProblems.java
-│   └── StringHashing.java
-├── Day06_Strings_Advanced/
-│   ├── KMPAlgorithm.java
-│   ├── RabinKarp.java
-│   ├── ZAlgorithm.java
-│   └── Trie.java
-├── Day07_LinkedLists/
-│   ├── SinglyLinkedList.java
-│   ├── DoublyLinkedList.java
-│   ├── CircularLinkedList.java
-│   ├── ReverseLinkedList.java
-│   ├── FloydCycleDetection.java
-│   └── MergeLists.java
-├── Day08_Stack/
-│   ├── StackImplementation.java
-│   ├── BalancedParentheses.java
-│   ├── NextGreaterElement.java
-│   ├── MonotonicStack.java
-│   └── MinStack.java
-├── Day09_Queue/
-│   ├── QueueImplementation.java
-│   ├── CircularQueue.java
-│   ├── DequeDemo.java
-│   ├── PriorityQueueDemo.java
-│   └── MonotonicQueue.java
-├── Day10_Hashing/
-│   ├── HashTableChaining.java
-│   ├── HashTableOpenAddressing.java
-│   ├── LoadFactorDemo.java
-│   └── RehashingDemo.java
-├── Day11_BinaryTree/
-│   ├── BinaryTree.java
-│   ├── InorderTraversal.java
-│   ├── PreorderTraversal.java
-│   ├── PostorderTraversal.java
-│   ├── HeightDepth.java
-│   └── Diameter.java
-├── Day12_BST_and_Heap/
-│   ├── BinarySearchTree.java
-│   ├── AVLTree.java
-│   ├── MinHeap.java
-│   └── MaxHeap.java
-├── Day13_AdvancedTrees/
-│   ├── RedBlackTreeConcepts.java
-│   ├── SegmentTree.java
-│   └── FenwickTree.java
-├── Day14_Graphs_Basics/
-│   ├── AdjacencyMatrix.java
-│   ├── AdjacencyList.java
-│   ├── BFS.java
-│   └── DFS.java
-├── Day15_Graphs_Intermediate/
-│   ├── TopologicalSort.java
-│   ├── CycleDetection.java
-│   └── DisjointSetUnionFind.java
-├── Day16_ShortestPath/
-│   ├── Dijkstra.java
-│   ├── BellmanFord.java
-│   └── FloydWarshall.java
-├── Day17_MST/
-│   ├── KruskalAlgorithm.java
-│   └── PrimAlgorithm.java
-├── Day18_Recursion_Backtracking/
-│   ├── RecursionBasics.java
-│   ├── Subsets.java
-│   ├── Permutations.java
-│   ├── NQueens.java
-│   └── SudokuSolver.java
-├── Day19_Greedy/
-│   ├── ActivitySelection.java
-│   ├── HuffmanCoding.java
-│   ├── FractionalKnapsack.java
-│   └── JobScheduling.java
-├── Day20_DP_Basics/
-│   ├── Memoization.java
-│   ├── Tabulation.java
-│   ├── DP_1D.java
-│   └── DP_2D.java
-├── Day21_DP_Advanced/
-│   ├── Knapsack01.java
-│   ├── LCS.java
-│   ├── LIS.java
-│   └── MatrixChainMultiplication.java
-├── Day22_BitManipulation/
-│   ├── BitwiseOperators.java
-│   ├── SetClearBits.java
-│   ├── CountSetBits.java
-│   └── XORTricks.java
-├── Day23_AdvancedDSA/
-│   ├── SparseTable.java
-│   ├── HeavyLightDecomposition.java
-│   ├── Treap.java
-│   ├── SplayTree.java
-│   └── SkipList.java
-└── Day24_InterviewPatterns/
-    ├── TwoPointerPattern.java
-    ├── SlidingWindowPattern.java
-    ├── BinarySearchPattern.java
-    ├── BFS_DFS_Pattern.java
-    ├── GreedyChoicePattern.java
-    └── DPPatternRecognition.java
+├── Day01_Foundations/                    # DS, algorithms, time/space complexity
+│   ├── TimeComplexity.java               # Big-O, Big-Ω, Big-Θ, growth rates
+│   ├── SpaceComplexity.java              # input/auxiliary space, stack, in-place
+│   └── RecurrenceRelations.java          # substitution, recursion tree, Master Theorem
+├── Day02_MathBasics/                     # logarithms, modular arithmetic, prime numbers
+│   ├── Logarithms.java                   # logs, powers of two, binary-search analysis
+│   ├── ModularArithmetic.java            # mod operations, inverse, fast exponentiation
+│   ├── PrimeNumbers.java                 # divisibility, primality testing
+│   ├── GCD_LCM.java                      # GCD, extended GCD, LCM
+│   └── SieveOfEratosthenes.java          # classic and segmented sieve
+├── Day03_Arrays_Basics/                  # traversal, searching, prefix sums
+│   ├── Traversal.java                    # array traversal
+│   ├── LinearSearch.java                 # linear search
+│   ├── BinarySearch.java                 # binary search, lower/upper bounds
+│   └── PrefixSum.java                    # prefix sums and difference arrays
+├── Day04_Arrays_Advanced/                # sliding window, two pointers, Kadane, matrices
+│   ├── SlidingWindow.java                 # fixed and variable windows
+│   ├── TwoPointers.java                  # pair sum, 3Sum, container problems
+│   ├── KadanesAlgorithm.java             # max subarray, circular and product variants
+│   └── Matrix2D.java                     # 2D traversal, rotation, matrix search
+├── Day05_Strings_Basics/                 # manipulation, naive matching, palindromes, hashing
+│   ├── StringManipulation.java           # String, StringBuilder, char arrays
+│   ├── NaivePatternMatch.java            # brute-force pattern matching
+│   ├── PalindromeProblems.java            # palindrome problems
+│   └── StringHashing.java                # polynomial rolling hash
+├── Day06_Strings_Advanced/               # KMP, Rabin-Karp, Z algorithm, Trie
+│   ├── KMPAlgorithm.java                 # prefix/failure function
+│   ├── RabinKarp.java                    # rolling-hash matching
+│   ├── ZAlgorithm.java                   # Z-array pattern matching
+│   └── Trie.java                         # insert, search, prefixes, autocomplete
+├── Day07_LinkedLists/                    # singly, doubly, circular, reverse, cycles, merge
+│   ├── SinglyLinkedList.java             # singly linked list
+│   ├── DoublyLinkedList.java             # doubly linked list
+│   ├── CircularLinkedList.java           # circular linked list
+│   ├── ReverseLinkedList.java            # iterative, recursive, groups of k
+│   ├── FloydCycleDetection.java          # cycle detection and cycle start
+│   └── MergeLists.java                   # merge sorted and k sorted lists
+├── Day08_Stack/                          # implementation, parentheses, NGE, monotonic, min
+│   ├── StackImplementation.java          # array, linked-list, and Deque stacks
+│   ├── BalancedParentheses.java          # balanced and generated parentheses
+│   ├── NextGreaterElement.java           # NGE and stock span
+│   ├── MonotonicStack.java               # monotonic stack and histogram
+│   └── MinStack.java                     # O(1) minimum
+├── Day09_Queue/                          # queue, circular queue, deque, priority, monotonic
+│   ├── QueueImplementation.java          # array and linked-list queues
+│   ├── CircularQueue.java                # wrap-around queue
+│   ├── DequeDemo.java                   # deque and window operations
+│   ├── PriorityQueueDemo.java            # priority queue and comparators
+│   └── MonotonicQueue.java               # window maximum/minimum
+├── Day10_Hashing/                        # tables, collisions, load factor, rehashing
+│   ├── HashTableChaining.java            # separate chaining
+│   ├── HashTableOpenAddressing.java      # linear, quadratic, double hashing
+│   ├── LoadFactorDemo.java               # load-factor performance
+│   └── RehashingDemo.java                # dynamic resizing and rehashing
+├── Day11_BinaryTree/                     # binary tree, traversals, height, diameter
+│   ├── BinaryTree.java                   # tree nodes and construction
+│   ├── InorderTraversal.java             # inorder traversal
+│   ├── PreorderTraversal.java            # preorder traversal
+│   ├── PostorderTraversal.java           # postorder traversal
+│   ├── HeightDepth.java                  # height, depth, balance
+│   └── Diameter.java                     # tree diameter
+├── Day12_BST_and_Heap/                   # BST, AVL tree, min heap, max heap
+│   ├── BinarySearchTree.java             # BST operations
+│   ├── AVLTree.java                      # AVL rotations and balance
+│   ├── MinHeap.java                      # min heap and heap sort
+│   └── MaxHeap.java                      # max heap and heapify
+├── Day13_AdvancedTrees/                  # red-black tree, segment tree, Fenwick tree
+│   ├── RedBlackTreeConcepts.java         # red-black properties and rotations
+│   ├── SegmentTree.java                 # range queries and lazy propagation
+│   └── FenwickTree.java                 # point updates and prefix/range queries
+├── Day14_Graphs_Basics/                  # matrix/list representation, BFS, DFS
+│   ├── AdjacencyMatrix.java              # adjacency matrix
+│   ├── AdjacencyList.java                # adjacency list
+│   ├── BFS.java                          # BFS and unweighted shortest path
+│   └── DFS.java                          # DFS and connected components
+├── Day15_Graphs_Intermediate/            # topological sort, cycle detection, Union-Find
+│   ├── TopologicalSort.java              # DFS and Kahn's algorithm
+│   ├── CycleDetection.java               # directed and undirected cycles
+│   └── DisjointSetUnionFind.java         # rank and path compression
+├── Day16_ShortestPath/                   # Dijkstra, Bellman-Ford, Floyd-Warshall
+│   ├── Dijkstra.java                    # non-negative weighted shortest path
+│   ├── BellmanFord.java                 # negative edges and cycles
+│   └── FloydWarshall.java               # all-pairs shortest path
+├── Day17_MST/                            # minimum spanning trees
+│   ├── KruskalAlgorithm.java             # sorted edges and Union-Find
+│   └── PrimAlgorithm.java                # priority-queue MST
+├── Day18_Recursion_Backtracking/         # recursion, subsets, permutations, N-Queens, Sudoku
+│   ├── RecursionBasics.java              # recursion fundamentals
+│   ├── Subsets.java                      # subsets
+│   ├── Permutations.java                 # permutations
+│   ├── NQueens.java                      # N-Queens
+│   └── SudokuSolver.java                 # Sudoku backtracking
+├── Day19_Greedy/                         # activity, Huffman, fractional knapsack, scheduling
+│   ├── ActivitySelection.java            # activity selection
+│   ├── HuffmanCoding.java                # Huffman coding
+│   ├── FractionalKnapsack.java           # fractional knapsack
+│   └── JobScheduling.java                # job sequencing and deadlines
+├── Day20_DP_Basics/                      # memoization, tabulation, 1D DP, 2D DP
+│   ├── Memoization.java                  # top-down DP
+│   ├── Tabulation.java                   # bottom-up DP
+│   ├── DP_1D.java                        # one-dimensional DP
+│   └── DP_2D.java                        # two-dimensional DP
+├── Day21_DP_Advanced/                    # knapsack, LCS, LIS, matrix-chain multiplication
+│   ├── Knapsack01.java                   # 0/1 and variant knapsack problems
+│   ├── LCS.java                          # longest common subsequence
+│   ├── LIS.java                          # longest increasing subsequence
+│   └── MatrixChainMultiplication.java    # matrix-chain multiplication
+├── Day22_BitManipulation/                # operators, set/clear, counting, XOR
+│   ├── BitwiseOperators.java             # AND, OR, XOR, NOT, shifts
+│   ├── SetClearBits.java                 # set, clear, toggle, check
+│   ├── CountSetBits.java                 # Brian Kernighan and bitCount
+│   └── XORTricks.java                    # single number and XOR patterns
+├── Day23_AdvancedDSA/                    # sparse table, Heavy-Light Decomposition, Treap, Splay, Skip List
+│   ├── SparseTable.java                  # O(1) range queries
+│   ├── HeavyLightDecomposition.java      # tree path decomposition
+│   ├── Treap.java                        # randomized BST/heap
+│   ├── SplayTree.java                    # splay operations
+│   └── SkipList.java                     # probabilistic layered list
+└── Day24_InterviewPatterns/              # two-pointer, window, search, graph, greedy, DP
+    ├── TwoPointerPattern.java            # two-pointer pattern
+    ├── SlidingWindowPattern.java        # sliding-window pattern
+    ├── BinarySearchPattern.java          # binary-search pattern
+    ├── BFS_DFS_Pattern.java              # BFS/DFS pattern
+    ├── GreedyChoicePattern.java          # greedy-choice pattern
+    └── DPPatternRecognition.java         # DP pattern recognition
 ```
 
 ---
@@ -174,7 +199,36 @@ DSA_in_java/
 ---
 
 ### Day 1 — Foundations & Complexity Analysis
-**Topics**: Data Structures intro, Algorithms intro, Big-O / Big-Ω / Big-Θ, Space Complexity, Recurrence Relations
+**Goal**: Build the vocabulary and analysis skills used in every later day.
+
+#### Required topics
+
+- [ ] What is a data structure: linear vs non-linear, static vs dynamic, and abstract data types
+- [ ] What is an algorithm: input, output, correctness, termination, and efficiency
+- [ ] Time complexity: counting operations and expressing growth as a function of `n`
+- [ ] **Big-O (`O`)**: asymptotic upper bound and worst-case growth
+- [ ] **Big-Ω (`Ω`)**: asymptotic lower bound and best-case growth
+- [ ] **Big-Θ (`Θ`)**: tight asymptotic bound when upper and lower bounds match
+- [ ] Best-case, average-case, and worst-case analysis
+- [ ] Common growth rates: `O(1)`, `O(log n)`, `O(n)`, `O(n log n)`, `O(n²)`, `O(2ⁿ)`, and `O(n!)`
+- [ ] Space complexity: input space, auxiliary space, recursion stack, and in-place algorithms
+- [ ] Recurrence relations: substitution method, recursion-tree method, and Master Theorem
+
+#### Notation comparison
+
+| Notation | Meaning | Example |
+|---|---|---|
+| `O(f(n))` | The algorithm grows no faster than `f(n)` asymptotically | Merge sort is `O(n log n)` |
+| `Ω(f(n))` | The algorithm grows at least as fast as `f(n)` asymptotically | Scanning an unsorted array is `Ω(n)` |
+| `Θ(f(n))` | The algorithm grows exactly at the rate `f(n)` asymptotically | Array indexing is `Θ(1)` |
+
+#### Day 1 deliverables
+
+1. Explain the difference between `O`, `Ω`, and `Θ` in your own words.
+2. Analyze ten loops and recursive functions and state their time and space complexity.
+3. Derive the recurrence for merge sort and solve it as `Θ(n log n)`.
+4. Record the analysis in `TimeComplexity.java`, `SpaceComplexity.java`, and
+   `RecurrenceRelations.java`.
 
 | File | What You'll Learn |
 |------|------------------|
@@ -187,7 +241,41 @@ DSA_in_java/
 ---
 
 ### Day 2 — Mathematical Basics
-**Topics**: Logarithms, Modular Arithmetic, Prime Numbers, GCD/LCM, Sieve of Eratosthenes
+**Goal**: Learn the mathematical tools that make array, number-theory, and
+algorithm solutions efficient.
+
+#### Required topics
+
+- [ ] **Logarithms**: base conversion, powers of two, and why binary search is `O(log n)`
+- [ ] **Modular arithmetic**: addition, subtraction, multiplication, exponentiation, negative values, and overflow-safe operations
+- [ ] **Modular inverse**: when an inverse exists and how extended GCD computes it
+- [ ] **Prime numbers**: trial division, divisibility checks, and primality testing
+- [ ] **GCD**: Euclidean algorithm and extended Euclidean algorithm
+- [ ] **LCM**: relationship with GCD and overflow-safe computation
+- [ ] **Sieve of Eratosthenes**: generating all primes up to `n`
+- [ ] **Segmented sieve**: generating primes over a large interval
+
+#### Key formulas and invariants
+
+| Topic | Formula or rule |
+|---|---|
+| Logarithm change of base | `log_b(a) = log(a) / log(b)` |
+| Modular addition | `(a + b) mod m` |
+| Modular multiplication | `(a × b) mod m` |
+| Fast modular exponentiation | Repeated squaring in `O(log exponent)` |
+| GCD | `gcd(a, b) = gcd(b, a mod b)` |
+| LCM | `lcm(a, b) = |a / gcd(a, b) × b|` |
+| Prime marking | Mark multiples beginning at `p²` in the sieve |
+
+#### Day 2 deliverables
+
+1. Implement fast modular exponentiation without converting values to floating point.
+2. Implement primality testing, GCD, LCM, and extended GCD.
+3. Generate primes with both the classic and segmented sieve.
+4. Explain why binary search, Euclid's algorithm, and fast exponentiation are
+   logarithmic.
+5. Record the implementations in `Logarithms.java`, `ModularArithmetic.java`,
+   `PrimeNumbers.java`, `GCD_LCM.java`, and `SieveOfEratosthenes.java`.
 
 | File | What You'll Learn |
 |------|------------------|
@@ -304,7 +392,7 @@ DSA_in_java/
 ---
 
 ### Day 10 — Hashing
-**Topics**: Hash Tables, Collision Handling, Load Factor, Rehashing
+**Topics**: Hash tables, collision handling (chaining and open addressing), load factor, rehashing
 
 | File | What You'll Learn |
 |------|------------------|
@@ -334,7 +422,7 @@ DSA_in_java/
 ---
 
 ### Day 12 — BST & Heaps
-**Topics**: Binary Search Tree, AVL Tree, Min Heap, Max Heap
+**Topics**: Binary Search Tree, AVL Tree, heap, min heap, max heap
 
 | File | What You'll Learn |
 |------|------------------|
@@ -348,7 +436,7 @@ DSA_in_java/
 ---
 
 ### Day 13 — Advanced Trees
-**Topics**: Red-Black Tree (concepts), Segment Tree, Fenwick Tree
+**Topics**: Red-Black Tree, Segment Tree, Fenwick Tree
 
 | File | What You'll Learn |
 |------|------------------|
@@ -375,7 +463,7 @@ DSA_in_java/
 ---
 
 ### Day 15 — Graphs: Intermediate
-**Topics**: Topological Sort, Cycle Detection, Union-Find
+**Topics**: Topological Sort, Cycle Detection, Disjoint Set (Union-Find)
 
 | File | What You'll Learn |
 |------|------------------|
@@ -511,4 +599,3 @@ DSA_in_java/
 | DP | count ways, min/max cost | `state + transition + base` |
 
 ---
-

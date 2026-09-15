@@ -10,7 +10,7 @@ Read [ABOUT_ME.md](ABOUT_ME.md) for my learning background, goals, and repositor
 
 The complete day-by-day roadmap is available in:
 
-[Day_Plans/24-Day-DSA-Java-Plan.md](Day_Plans/24-Day-DSA-Java-Plan.md)
+[24-Day-DSA-Java-Plan.md](24-Day-DSA-Java-Plan.md)
 
 ## Repository Structure
 
@@ -18,8 +18,7 @@ The complete day-by-day roadmap is available in:
 DSA_in_java/
 ├── ABOUT_ME.md
 ├── README.md
-├── Day_Plans/
-│   └── 24-Day-DSA-Java-Plan.md
+├── 24-Day-DSA-Java-Plan.md
 └── Day01_Foundations/
     ├── TimeComplexity.java
     ├── SpaceComplexity.java
