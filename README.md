@@ -36,4 +36,3 @@ From the repository root:
 javac Day01_Foundations/TimeComplexity.java
 java -cp Day01_Foundations TimeComplexity
 ```
-
