@@ -23,6 +23,12 @@ DSA_in_java/
     ├── TimeComplexity.java
     ├── SpaceComplexity.java
     └── RecurrenceRelations.java
+└── Day02_JavaBasics/
+    ├── JavaBasics.java
+    ├── ReferenceBehavior.java
+    ├── ArraysAndReferences.java
+    ├── StringBasics.java
+    └── PointerStyleTraversal.java
 ```
 
 Each day's Java implementations will be organized in its own `DayXX_TopicName` folder as the journey progresses.
@@ -36,6 +42,14 @@ javac Day01_Foundations/TimeComplexity.java
 java -cp Day01_Foundations TimeComplexity
 ```
 
+To run the Day 2 examples:
+
+```bash
+javac Day02_JavaBasics/*.java
+java -cp Day02_JavaBasics JavaBasics
+```
+
 ## Progress
 
 - [x] Day 1 of 24 completed — Foundations
+- [ ] Day 2 — Java basics, references, arrays, strings, and pointer-style traversal

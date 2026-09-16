@@ -27,7 +27,7 @@ time complexity: time complexity is a computational complexity that describes th
 
 <---------------------------------------------BIG O NOTATION----------------------------------------------> 
                 
-                
+                this is the worst case complexity of an algorithm. 
 
 big o notation: Big O notation is a mathematical notation used to describe the upper bound of an algorithm's growth rate. It provides a way to express the efficiency of an algorithm in terms of how its running time or space requirements grow as the size of the input data increases. 
                 Big O notation allows for comparisons between different algorithms and helps identify the most efficient solution for a given problem, especially when dealing with large datasets.
