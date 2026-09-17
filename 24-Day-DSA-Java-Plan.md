@@ -9,7 +9,7 @@ This folder contains the complete day-by-day learning plan.
 ```
 Day 01: ✅ Foundations          Day 13: ⬜ Advanced Trees
 Day 02: ⬜ Java Basics          Day 14: ⬜ Graphs Basics
-Day 03: ⬜ Arrays Basics        Day 15: ⬜ Graphs Intermediate
+Day 03: ✅ Arrays Basics        Day 15: ⬜ Graphs Intermediate
 Day 04: ⬜ Arrays Advanced      Day 16: ⬜ Shortest Path
 Day 05: ⬜ Strings Basics       Day 17: ⬜ MST
 Day 06: ⬜ Strings Advanced     Day 18: ⬜ Recursion & Backtracking
@@ -42,7 +42,7 @@ broader heading.
 | Master Tree section          | Assigned day(s) | Covered topics                                                                                                                                                |
 | ---------------------------- | --------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1. Foundations               |               1 | Data structures, algorithms, time complexity, Big-O, Big-Ω, Big-Θ, space complexity, recurrence relations                                                   |
-| 2. Java Basics               |               2 | Primitive/reference values, Java references, arrays, String immutability, StringBuilder, and pointer-style traversal                                             |
+| 2. Java Basics               |               2 | Primitive/reference values, Java references, arrays, String immutability, and StringBuilder                                                                   |
 | 3. Arrays                    |            3–4 | Traversal, searching, linear search, binary search, prefix sum, sliding window, two pointers, Kadane’s algorithm, matrix/2D arrays                           |
 | 4. Strings                   |            5–6 | String manipulation, naive matching, KMP, Rabin-Karp, Z algorithm, palindrome problems, string hashing, Trie                                                  |
 | 5. Linked Lists              |               7 | Singly, doubly, circular, reverse linked list, Floyd cycle detection, merge lists                                                                             |
@@ -73,8 +73,7 @@ DSA_in_java/
 │   ├── JavaBasics.java                   # primitives, methods, control flow, and input values
 │   ├── ReferenceBehavior.java            # Java reference semantics and object mutation
 │   ├── ArraysAndReferences.java          # array references, indexing, and in-place updates
-│   ├── StringBasics.java                 # String immutability and StringBuilder
-│   └── PointerStyleTraversal.java        # two-pointer and slow/fast-pointer patterns
+│   └── StringBasics.java                 # String immutability and StringBuilder
 ├── Day03_Arrays_Basics/                  # traversal, searching, prefix sums
 │   ├── Traversal.java                    # array traversal
 │   ├── LinearSearch.java                 # linear search
@@ -244,49 +243,45 @@ DSA_in_java/
 ### Day 2 — Java Basics for DSA
 
 **Goal**: Build the Java foundation needed to write safe and clear DSA
-solutions. Java does not expose raw pointers; object and array variables hold
-references, so pointer-style algorithms are expressed with indexes and
-references.
+solutions. Java does not expose raw pointers; object and array variables hold references.
 
 #### Required topics
 
-- [ ] Primitive values, reference values, variables, methods, and control flow
+- [X] Primitive values, reference values, variables, methods, and control flow
 - [ ] Java pass-by-value semantics, including what happens when a reference is passed to a method
-- [ ] Arrays as mutable objects, indexing, bounds, and in-place updates
-- [ ] `String` immutability, comparison with `.equals()`, and common string operations
+- [X] Arrays as mutable objects, indexing, bounds, and in-place updates
+- [X] `String` immutability, comparison with `.equals()`, and common string operations
 - [ ] `StringBuilder` for efficient repeated edits
-- [ ] Pointer-style traversal with left/right indexes and slow/fast references
 - [ ] Choosing `char[]`, `String`, or `StringBuilder` for a problem
 
 #### Core rules
 
-| Topic | Rule |
-| ----- | ---- |
-| Primitive argument | A method receives a copy of the primitive value |
-| Object argument | A method receives a copy of the reference; the referenced object may still be mutated |
-| String comparison | Use `.equals()` for content, not `==` |
-| String updates | `String` creates a new value; `StringBuilder` mutates its buffer |
-| Array indexing | Valid indexes are `0` through `array.length - 1` |
-| Pointer-style loops | Move indexes/references deliberately and define the stopping condition |
+| Topic               | Rule                                                                                  |
+| ------------------- | ------------------------------------------------------------------------------------- |
+| Primitive argument  | A method receives a copy of the primitive value                                       |
+| Object argument     | A method receives a copy of the reference; the referenced object may still be mutated |
+| String comparison   | Use`.equals()` for content, not `==`                                              |
+| String updates      | `String` creates a new value; `StringBuilder` mutates its buffer                  |
+| Array indexing      | Valid indexes are`0` through `array.length - 1`                                   |
+| Pointer-style loops | Move indexes/references deliberately and define the stopping condition                |
 
 #### Day 2 deliverables
 
 1. Explain the difference between primitive values and object references.
 2. Demonstrate Java pass-by-value behavior without calling references raw pointers.
-3. Implement array updates, reversal, and a two-pointer pair search.
+3. Implement array updates and reversal.
 4. Implement string comparison, reversal, palindrome checking, and `StringBuilder` edits.
-5. Practice slow/fast reference movement and record the examples in the Day 2 files.
+5. Record the examples in the Day 2 files and explain why each choice fits the problem.
 
-| File | What You'll Learn |
-| ---- | ----------------- |
-| `JavaBasics.java` | Primitive values, methods, loops, and control flow |
-| `ReferenceBehavior.java` | References, mutation, reassignment, and pass-by-value |
-| `ArraysAndReferences.java` | Array references, in-place reversal, and pair search |
-| `StringBasics.java` | String content comparison, immutability, and `StringBuilder` |
-| `PointerStyleTraversal.java` | Left/right indexes and slow/fast pointer-style traversal |
+| File                         | What You'll Learn                                             |
+| ---------------------------- | ------------------------------------------------------------- |
+| `JavaBasics.java`          | Primitive values, methods, loops, and control flow            |
+| `ReferenceBehavior.java`   | References, mutation, reassignment, and pass-by-value         |
+| `ArraysAndReferences.java` | Array references, in-place reversal, and pair search          |
+| `StringBasics.java`        | String content comparison, immutability, and`StringBuilder` |
 
-**Practice**: Reverse an array, validate a palindrome, solve Two Sum on a sorted
-array, and explain every reference mutation.
+**Practice**: Reverse an array, validate a palindrome, compare strings safely,
+edit text with `StringBuilder`, and explain every reference mutation.
 
 ---
 
