@@ -52,4 +52,4 @@ java -cp Day02_JavaBasics JavaBasics
 ## Progress
 
 - [x] Day 1 of 24 completed — Foundations
-- [ ] Day 2 — Java basics, references, arrays, strings, and pointer-style traversal
+- [x] Day 2 — Java basics, references, arrays, strings, and pointer-style traversal
