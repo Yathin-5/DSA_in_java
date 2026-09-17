@@ -27,8 +27,7 @@ DSA_in_java/
     ├── JavaBasics.java
     ├── ReferenceBehavior.java
     ├── ArraysAndReferences.java
-    ├── StringBasics.java
-    └── PointerStyleTraversal.java
+    └── StringBasics.java
 ```
 
 Each day's Java implementations will be organized in its own `DayXX_TopicName` folder as the journey progresses.
@@ -53,3 +52,4 @@ java -cp Day02_JavaBasics JavaBasics
 
 - [x] Day 1 of 24 completed — Foundations
 - [x] Day 2 — Java basics, references, arrays, strings, and pointer-style traversal
+- [x] Day 3 — Arrays Basics: Traversal, Linear Search, Binary Search, Prefix Sum
